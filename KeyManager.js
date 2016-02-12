@@ -6,24 +6,24 @@
  * console.log(keys[0].name); // logs "testKey1"
  */ 
 var KeyManager = (function () { 
-	var keys = [];
+    var keys = [];
 
-	return {
-		/**
-		 * Adds an object to the keys array with the structure
-		 * { 
-		 * 	 "name": "TestKey", "value": "ASDFSDFSDF"
-		 * }
-		 */
-		addKey : function(keyName, keyValue) {
-			keys.push({"name": keyName, "key" : keyValue});
-		},
-		
-		/**
-		 * Returns an array of keys
-		 */
-		getKeys : function() {
-			return keys;
-		}
-	};
+    return {
+        /**
+         * Adds an object to the keys array with the structure
+         * { 
+         * 	 "name": "TestKey", "value": "ASDFSDFSDF"
+         * }
+         */
+        addKey : function(keyName, keyValue) {
+            keys.push({"name": keyName, "key" : keyValue});
+        },
+
+        /**
+         * Returns an array of keys
+         */
+        getKeys : function() {
+            return keys;
+        }
+    };
 })();
